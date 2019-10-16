@@ -16,6 +16,7 @@
 .task-clear-completed:hover{
     border:1px solid #EBDFDF;
     border-radius: 3px;
+    /*-webkit-focus-ring-color: #EBDFDF;*/
 }
 
 .task-filter__input{
@@ -25,10 +26,7 @@
 }
 
 .task-filter__input:checked ~ .task-filter__text{
-    border: 1px solid #EBDFDF;
-    border-radius: 3px;
-    padding:2px 5px 2px 5px;
-
+    border-color: #EBDFDF;
 }
 
 .task-filter__item{
@@ -47,6 +45,10 @@
 
 .task-filter__text{
     text-align: center;
+    padding:2px 5px 2px 5px;
+    margin: 5px;
+    border: 1px solid transparent;
+    border-radius: 3px;
 
 }
 

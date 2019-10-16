@@ -112,5 +112,6 @@ input[type="radio"]{
 
 .task-item__status:checked ~ .task-item__text{
     text-decoration: line-through;
+    color: #5DC2AF ;
 
 }

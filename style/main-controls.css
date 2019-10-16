@@ -38,10 +38,10 @@
     border: none;
     background: none;
     outline: none;
-    width: 100%;
+    width: 550px;
     font-size: 24px;
     color: #666;
-
+    overflow: hidden;
     font-style: italic;
 
 }
