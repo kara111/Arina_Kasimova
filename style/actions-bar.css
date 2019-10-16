@@ -1,0 +1,44 @@
+.todo-app__actions-bar{
+    grid-row: 3/3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.task-clear-completed{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked,
+input[type="radio"]:not(:checked)
+{
+    position: absolute;
+    left: -9999px;
+}
+
+input[type="radio"]:checked + span,
+input[type="radio"]:not(:checked) + span {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.task-filter__item{
+    /*border: 2px solid #E6E6E6;
+    border-radius: 2px;
+    padding: 3px;*/
+    outline: none;
+    padding: 0.3em;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.task-filter__text{
+    text-align: center;
+}

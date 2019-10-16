@@ -1,0 +1,44 @@
+body{
+    background: #F2F2F2;
+
+    font-family: "Roboto Thin", serif;
+    font-style: normal;
+    font-weight: normal;
+
+}
+.todo-app {
+    --grid-module-width: 60px;
+    display: grid;
+    grid-template-columns: repeat(12, var(--grid-module-width));
+    grid-gap: 24px;
+    justify-content: center;
+    margin-left: 24px;
+    margin-right: 24px;
+
+
+}
+
+.todo-app__header{
+    grid-row: 1/1;
+    grid-column: 4/-4;
+
+    /*grid-column: 1 / 4;*/
+
+
+    /*width: 100px;*/
+    height: 160px;
+
+
+    font-family: "Roboto Thin",serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 72px;
+    line-height: 21px;
+    text-align: center;
+    /* identical to box height, or 21% */
+
+    letter-spacing: -2.5px;
+
+    color: #CCCCCC;
+
+}
