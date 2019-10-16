@@ -2,29 +2,35 @@
     grid-row: 3/3;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .task-clear-completed{
     border: none;
     background: none;
     cursor: pointer;
+    margin: 20px;
 }
 
-input[type="radio"]:checked,
-input[type="radio"]:not(:checked)
-{
-    position: absolute;
-    left: -9999px;
+.task-clear-completed:active,
+.task-clear-completed:focus,
+.task-clear-completed:hover{
+    border:1px solid #EBDFDF;
+    border-radius: 3px;
 }
 
-input[type="radio"]:checked + span,
-input[type="radio"]:not(:checked) + span {
-    display: inline-block;
-    position: relative;
-    padding-left: 28px;
-    line-height: 20px;
-    cursor: pointer;
+.task-filter__input{
+    opacity: 0;
+    position: absolute ;
+
 }
+
+.task-filter__input:checked ~ .task-filter__text{
+    border: 1px solid #EBDFDF;
+    border-radius: 3px;
+    padding:2px 5px 2px 5px;
+
+}
+
 .task-filter__item{
     /*border: 2px solid #E6E6E6;
     border-radius: 2px;
@@ -41,4 +47,10 @@ input[type="radio"]:not(:checked) + span {
 
 .task-filter__text{
     text-align: center;
+
 }
+
+.task-counter{
+    margin: 20px;
+}
+
